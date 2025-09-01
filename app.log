@@ -1,0 +1,66 @@
+2025-09-01 16:37:41,167 | INFO | request | GET/
+2025-09-01 16:37:49,987 | INFO | app | Root endpoint hit
+2025-09-01 16:37:50,216 | INFO | request | GET/favicon.ico
+2025-09-01 16:38:10,776 | INFO | request | GET/docs
+2025-09-01 16:38:10,955 | INFO | request | GET/openapi.json
+2025-09-01 16:38:35,418 | INFO | request | POST/users/login
+2025-09-01 16:38:39,369 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\ditsd\Documents\Python\BookStore\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-01 16:38:40,476 | INFO | service.user_service | User logged in: ninja@yopmail.com
+2025-09-01 16:39:22,203 | INFO | request | GET/books/
+2025-09-01 16:39:22,245 | ERROR | request | Exception from request : 'BookService' object has no attribute 'list_books'
+2025-09-01 16:39:42,784 | INFO | request | GET/books/
+2025-09-01 16:39:42,808 | ERROR | request | Exception from request : 'BookService' object has no attribute 'list_books'
+2025-09-01 16:40:06,758 | INFO | request | GET/books/
+2025-09-01 16:40:06,766 | ERROR | request | Exception from request : 'BookService' object has no attribute 'list_books'
+2025-09-01 16:40:23,165 | INFO | request | GET/books/
+2025-09-01 16:40:35,966 | ERROR | request | Exception from request : 'BookService' object has no attribute 'list_books'
+2025-09-01 16:40:40,828 | INFO | request | GET/books/
+2025-09-01 16:42:34,560 | ERROR | request | Exception from request : 'BookService' object has no attribute 'list_books'
+2025-09-01 16:42:42,677 | INFO | request | GET/books/
+2025-09-01 16:43:59,306 | INFO | request | GET/books/
+2025-09-01 16:44:13,866 | INFO | request | GET/books/1
+2025-09-01 16:44:49,544 | INFO | request | GET/books/1
+2025-09-01 16:47:06,461 | INFO | request | PUT/books/1
+2025-09-01 16:47:14,508 | INFO | request | PUT/books/1
+2025-09-01 16:47:17,035 | INFO | request | PUT/books/1
+2025-09-01 16:47:56,882 | INFO | request | PUT/books/1
+2025-09-01 16:49:01,596 | INFO | request | PUT/books/1
+2025-09-01 16:49:55,633 | INFO | request | PUT/books/1
+2025-09-01 16:49:55,690 | ERROR | request | Exception from request : BookRepository.update() takes 2 positional arguments but 3 were given
+2025-09-01 16:50:11,245 | INFO | request | PUT/books/1
+2025-09-01 16:50:36,778 | ERROR | request | Exception from request : BookRepository.update() takes 2 positional arguments but 3 were given
+2025-09-01 16:50:44,877 | INFO | request | PUT/books/1
+2025-09-01 16:52:33,012 | ERROR | request | Exception from request : BookRepository.update() takes 2 positional arguments but 3 were given
+2025-09-01 16:52:37,088 | INFO | request | PUT/books/1
+2025-09-01 17:02:31,238 | ERROR | request | Exception from request : BookRepository.update() takes 2 positional arguments but 3 were given
+2025-09-01 17:02:37,892 | INFO | request | PUT/books/1
+2025-09-01 17:03:27,986 | INFO | request | PUT/books/1
+2025-09-01 17:03:45,680 | INFO | request | DELETE/books/1
+2025-09-01 17:03:45,705 | ERROR | repositories.book_repository | Failed to delete book
+Traceback (most recent call last):
+  File "C:\Users\ditsd\Documents\Python\BookStore\repositories\book_repository.py", line 59, in delete
+    self.db.refresh()
+TypeError: Session.refresh() missing 1 required positional argument: 'instance'
+2025-09-01 17:03:45,711 | ERROR | request | Exception from request : Session.refresh() missing 1 required positional argument: 'instance'
+2025-09-01 17:03:51,089 | INFO | request | DELETE/books/1
+2025-09-01 17:05:12,540 | INFO | request | POST/books/
+2025-09-01 17:05:20,420 | INFO | service.book_service | Book created
+2025-09-01 17:05:33,602 | INFO | request | DELETE/books/2
+2025-09-01 17:06:31,546 | ERROR | repositories.book_repository | Failed to delete book
+Traceback (most recent call last):
+  File "C:\Users\ditsd\Documents\Python\BookStore\repositories\book_repository.py", line 59, in delete
+    return True
+TypeError: Session.refresh() missing 1 required positional argument: 'instance'
+2025-09-01 17:06:31,555 | ERROR | request | Exception from request : Session.refresh() missing 1 required positional argument: 'instance'
+2025-09-01 17:07:21,978 | INFO | request | POST/books/
+2025-09-01 17:07:22,031 | INFO | service.book_service | Book created
+2025-09-01 17:07:25,562 | INFO | request | DELETE/books/2
+2025-09-01 17:07:43,540 | INFO | request | DELETE/books/3
+2025-09-01 17:12:45,583 | INFO | request | POST/books/
+2025-09-01 17:12:45,662 | INFO | service.book_service | Book created
+2025-09-01 17:12:51,020 | INFO | request | DELETE/books/4
